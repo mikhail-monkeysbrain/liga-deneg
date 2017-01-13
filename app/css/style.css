@@ -16,6 +16,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     vertical-align: baseline;
     background: transparent;
 }
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
 body {
     line-height: 1;
     position:relative;
@@ -114,20 +119,11 @@ body{
 }
 
 #slideVal{
-    background: url("images/ico-edit.png"/*tpa=http://liga.boom-35.ru/images/ico-edit.png*/) no-repeat scroll 180px 11px rgba(0, 0, 0, 0);
     border: 1px solid #c2c6ce;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14) inset;
-    color: #000;
-    display: block;
-    float: right;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 15px;
-    margin: 0 auto;
-    outline: medium none;
-    padding: 12px 40px 12px 10px;
-    width: 150px;
+    min-height: 35px;
+    padding-left: 10px
 }
 
 #slideVal:focus{
@@ -138,36 +134,18 @@ body{
 }
 
 #slideVal2{
-    background: url("images/ico-edit.png"/*tpa=http://liga.boom-35.ru/images/ico-edit.png*/) no-repeat scroll 180px 11px rgba(0, 0, 0, 0);
     border: 1px solid #c2c6ce;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14) inset;
-    color: #000;
-    display: block;
-    float: right;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 15px;
-    margin: 0 auto;
-    outline: medium none;
-    padding: 12px 40px 12px 10px;
-    width: 150px;
+    min-height: 35px;
+    padding-left: 10px
 }
 
-#slider{
-    width: 460px;
+#slider, #slider2{
+    width: 100%;
     height: 5px;
-    margin-right: 50px;
 
 }
-
-#slider2{
-    width: 460px;
-    height: 5px;
-    margin-right: 50px;
-
-}
-
 #slider span{
     height:20px;
 }
@@ -184,47 +162,26 @@ body{
 }
 
 .kalk{
-    font-family: Verdana,sans-serif;
-    color: #000;
-    font-size: 14px;
-    float: left;
-    margin-bottom: 10px;
-    float: left;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    font-size: 14px
 }
 
 .kalk2{
-    margin-left:330px;
-    font-family: Verdana,sans-serif;
-    color: #000;
-    font-size: 14px;
-    float: left;
-}
-.inputDiv{
-    margin-top: 10px;
-    float:left;
-    width:500px;
-
-}
-.inputDiv2{
-    margin-top: 10px;
-    float:left;
-    width:500px;
-
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    font-size: 14px
 }
 .inp2{
-    width: 590px;
     border: 1px solid #c2c6ce;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14) inset;
-    color: #3e4146;
-    display: block;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 15px;
-    margin: 0 auto;
-    outline: medium none;
     padding: 12px 40px 12px 10px;
-    width: 670px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px 0;
 }
 
 .inp2:focus{
@@ -233,6 +190,9 @@ body{
 
 #block2{
     border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 #block3{
@@ -240,39 +200,27 @@ body{
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
 
+    position: relative;
 }
 .select_spisok{
     width: 0 !important;
 }
 
-#block4{
-    float:left;
-    margin-top:40px;
-    margin-left: 40px;
-    margin-bottom:40px;
-
-}
-#block5{
-    float:left;
-    margin-top:10px;
-    margin-left:340px;
-    font-family: Verdana,sans-serif;
-    color: #000;
-    font-size: 15px;
-    margin-bottom:40px;
-
-}
 
 #block6{
-    padding:40px;
+    padding:20px 0;
     border-top:1px solid #ccc;
     border-bottom: 1px solid #ccc;
-
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
 }
 
 #block6 input{
-    width:275px;
-    float:left;
+    width: 45%;
 }
 #block6 input:nth-child(1){
     margin-right: 20px;
@@ -281,7 +229,6 @@ body{
     padding:40px;
     border-bottom: 1px solid #ccc;
     background-color: #F0F2F6;
-    font-family: Verdana,sans-serif;
     color: #000;
     font-size: 15px;
 }
@@ -365,7 +312,10 @@ table {
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-
+.inputDiv, .inputDiv2 {
+    position: relative;
+    width: 50%;
+}
 .right img{
     /* margin-top:-507px;*/
     display: block;
@@ -2288,4 +2238,9 @@ z-index: 100;
     margin-left:20px;
     margin-top: 12px;
     cursor: pointer;
+}
+.inputDiv, .inputDiv2 {
+    position: relative;
+    width: 70%;
+    margin-top: 25px;
 }

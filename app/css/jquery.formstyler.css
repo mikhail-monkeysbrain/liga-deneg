@@ -1,5 +1,5 @@
 .jq-checkbox {
-    background: url("../images/checkbox-bg.png"/*tpa=http://liga.boom-35.ru/images/checkbox-bg.png*/) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img/checkbox-bg.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     display: inline-block;
     height: 20px;
     margin-right: 3px;
@@ -32,7 +32,7 @@
 
 
 .jq-radio {
-    background: url("../images/radio-button-bg.png"/*tpa=http://liga.boom-35.ru/images/radio-button-bg.png*/) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img/radio-button-bg.png" ) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     display: inline-block;
     height: 20px;
     margin-right: 3px;
