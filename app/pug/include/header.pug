@@ -1,10 +1,36 @@
-doctype html
-html(lang="ru")
-head
-  meta(charset="UTF-8")
-  meta(author="monkeysbrain")
-  link(rel="stylesheet", href="css/reset.css")
-  link(rel="stylesheet", href="css/template-style.css")
-  title 
-body
-  block content
+section#sect-1
+	.inner
+		.header
+			img(src="img/logo.png" alt="logo").logo
+			.address Вологда, ул. Батюшкова 11, 5 этаж, офис 501 пн. – пт. с 9.00 – 18.00, обед: с 13.00 – 14.00 <br> тел.: <span class="font-bold">8(965)735-2000</span>
+			.address Вологда, ул. Батюшкова 11, 5 этаж, офис 501 пн. – пт. с 9.00 – 18.00, обед: с 13.00 – 14.00 <br> тел.: <span class="font-bold">8(965)735-2000</span>
+		ul.menu
+			li.menu-item.current
+				a(href="#") Главная
+			li.menu-item
+				a(href="#") Виды займов
+			li.menu-item
+				a(href="#") Как оформить займ?
+			li.menu-item
+				a(href="#") Контакты
+			li.menu-item
+				a(href="#") Документы
+	.content
+		.slider
+			#owl-slide
+				a.btn.prev.top &#12296;&nbsp;&nbsp;
+				.owl-slide
+					.item
+						h2 займы до 35 000 рублей получить легко! 
+						br
+						p Оставьте заявку на ваш заём на сайте или по бесплатному телефону
+						br
+						p.lightblue 8-800-000-00-00
+					.item
+						h2 займы до 35 000 рублей получить легко! 
+						br
+						p Оставьте заявку на ваш заём на сайте или по бесплатному телефону
+						br
+						p.lightblue 8-800-000-00-00
+				a.btn.next.top &nbsp;&nbsp;&#9002;
+		img(src="img/girl.png").girl

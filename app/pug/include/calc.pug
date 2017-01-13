@@ -1,0 +1,170 @@
+section#sect-2
+	.inner.minim
+		p.min15 Заполни заявку онлайн и получи решение за 15 минут.
+		.wrapper_in
+			form(method='post', action='http://liga.boom-35.ru/add.php', name='form_str')
+				#block2
+					.inputDiv
+						label.kalk(for='slideVal') 10 000 Р.
+						label.kalk2(for='slideVal') 30 000 Р.
+						#slider(style='float: left;')
+					input#slideVal(name='begunok1', style='float: left;')
+					p.result2_p(style='float: left;')
+					div(style='clear: both')
+					br
+					br
+					.inputDiv2
+						label.kalk(for='slideVal2') 8 НЕДЕЛЬ 
+						label.kalk2(for='slideVal2') 52 НЕДЕЛИ 
+						#slider2(style='float: left;')
+					input#slideVal2(name='begunok2', style='float: left;')
+					p.result2_p(style='float: left;')
+					div(style='clear: both')
+					br
+					br
+					br
+				// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  block3
+				#block3
+					input.inp2(type='text', name='suname', value='', placeholder='Фамилия*')
+					br
+					input.inp2(type='text', name='name', value='', placeholder='Имя*')
+					br
+					input.inp2(type='text', name='otchestvo', value='', placeholder='Отчество*')
+					br
+					input.inp2(type='text', name='date_r', value='', placeholder='Дата рождения*')
+					br
+					br
+				#block4
+					select.select_spisok(size='1', name='grajdanstvo')
+						option.grajdan(selected='') Гражданство
+						option Российская Федерация
+						option Иное
+					br
+					br
+					select.select_spisok(size='1', name='region')
+						option.grajdan(selected='') Регион проживания
+						option Москва (г)
+						option Санкт-Петербург (г)
+						option Адыгея (Респ)
+						option Алтай (Респ)
+						option Алтайский (край)
+						option Амурская (обл)
+						option Архангельская (обл)
+						option Астраханская (обл)
+						option Байконур (г)
+						option Башкортостан (Респ)
+						option Белгородская (обл)
+						option Брянская (обл)
+						option Бурятия (Респ)
+						option Владимирская (обл)
+						option Волгоградская (обл)
+						option Вологодская (обл)
+						option Воронежская (обл)
+						option Дагестан (Респ)
+						option Еврейская (Аобл)
+						option Забайкальский (край)
+						option Ивановская (обл)
+						option Ингушетия (Респ)
+						option Иркутская (обл)
+						option Кабардино-Балкарская (Респ)
+						option Калининградская (обл)
+						option Калмыкия (Респ)
+						option Калужская (обл)
+						option Камчатский (край)
+						option Карачаево-Черкесская (Респ)
+						option Карелия (Респ)
+						option Кемеровская (обл)
+						option Кировская (обл)
+						option Коми (Респ)
+						option Костромская (обл)
+						option Краснодарский (край)
+						option Красноярский (край)
+						option Крым (Респ)
+						option Курганская (обл)
+						option Курская (обл)
+						option Ленинградская (обл)
+						option Липецкая (обл)
+						option Магаданская (обл)
+						option Марий Эл (Респ)
+						option Мордовия (Респ)
+						option Московская (обл)
+						option Мурманская (обл)
+						option Ненецкий (АО)
+						option Нижегородская (обл)
+						option Новгородская (обл)
+						option Новосибирская (обл)
+						option Омская (обл)
+						option Оренбургская (обл)
+						option >Орловская (обл)
+						option Пензенская (обл)
+						option Пермский (край)
+						option Приморский (край)
+						option Псковская (обл)
+						option Ростовская (обл)
+						option Рязанская (обл)
+						option Самарская (обл)
+						option Саратовская (обл)
+						option Саха /Якутия/ (Респ)
+						option Сахалинская (обл)
+						option Свердловская (обл)
+						option Севастополь (г)
+						option Северная Осетия - Алания (Респ)
+						option Смоленская (обл)
+						option Ставропольский (край)
+						option Тамбовская (обл)
+						option Татарстан (Респ)
+						option Тверская (обл)
+						option Томская (обл)
+						option Тульская (обл)
+						option Тыва (Респ)
+						option Тюменская (обл)
+						option Удмуртская (Респ)
+						option Ульяновская (обл)
+						option Хабаровский (край)
+						option Хакасия (Респ)
+						option Ханты-Мансийский Автономный округ - Югра (АО)
+						option Челябинская (обл)
+						option Чеченская (Респ)
+						option Чувашская Республика - (Чувашия)
+						option Чукотский (АО)
+						option Ямало-Ненецкий (АО)
+						option Ярославская (обл)
+				br
+				br
+				#block5
+					p Наличие постоянной регистрации РФ
+					br
+					lable
+						| Да&nbsp
+						input(type='radio', value='Да', name='registraciya')
+					| &nbsp
+					lable
+						| Нет&nbsp
+						input(type='radio', value='Нет', name='registraciya')
+					br
+				div(style='clear: both')
+				#block6
+					input.inp2(type='text', name='user_phone', value='', placeholder='Мобильный телефон*')
+					input.inp2(type='text', name='user_email', value='', placeholder='Электронная почта*')
+					div(style='clear: both')
+				#block7(align='center')
+					label
+						input(type='checkbox', name='gotov')
+						| Я согласен на передачу 
+						span.pers_dan персональных данных
+					.text_hide
+						br
+						p(style='text-align: left;font-size:12px;')
+							| xxxxx xxxxxxxxx xxxxxxxxxxx xxxx xxxxxxxxxxxx xxx xxxxxxxxxxxxxx xxxxxxxxx
+							| xxxxx xxxxxxxxx xxxxxxxxxxx xxxx xxxxxxxxxxxx xxx xxxxxxxxxxxxxx xxxxxxxxx
+							| xxxxx xxxxxxxxx xxxxxxxxxxx xxxx xxxxxxxxxxxx xxx xxxxxxxxxxxxxx xxxxxxxxx
+							| xxxxx xxxxxxxxx xxxxxxxxxxx xxxx xxxxxxxxxxxx xxx xxxxxxxxxxxxxx xxxxxxxxx
+							| xxxxx xxxxxxxxx xxxxxxxxxxx xxxx xxxxxxxxxxxx xxx xxxxxxxxxxxxxx xxxxxxxxx
+							| xxxxx xxxxxxxxx xxxxxxxxxxx xxxx xxxxxxxxxxxx xxx xxxxxxxxxxxxxx xxxxxxxxx
+							| xxxxx xxxxxxxxx xxxxxxxxxxx xxxx xxxxxxxxxxxx xxx xxxxxxxxxxxxxx xxxxxxxxx
+							| xxxxx xxxxxxxxx xxxxxxxxxxx xxxx xxxxxxxxxxxx xxx xxxxxxxxxxxxxx xxxxxxxxx
+							| xxxxx xxxxxxxxx xxxxxxxxxxx xxxx xxxxxxxxxxxx xxx xxxxxxxxxxxxxx xxxxxxxxx
+							| xxxxx xxxxxxxxx xxxxxxxxxxx xxxx xxxxxxxxxxxx xxx xxxxxxxxxxxxxx xxxxxxxxx
+				#block8
+					input.but_sub(type='submit', value='Далее')
+				div(style='clear: both')
