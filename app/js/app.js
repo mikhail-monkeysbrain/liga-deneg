@@ -59,9 +59,9 @@ $(document).ready(function(){
 
 $(document).ready(function() {
     $("a.gallery").fancybox({           
-          "padding" : 20,
-          "imageScale" : false, 
-      "zoomOpacity" : false,
+      "padding" : 20,
+      "imageScale" : false, 
+      "zoomOpacity" : 0.8,
       "zoomSpeedIn" : 1000, 
       "zoomSpeedOut" : 1000,  
       "zoomSpeedChange" : 1000, 
@@ -71,6 +71,9 @@ $(document).ready(function() {
       "overlayOpacity" : 0.8, 
       "hideOnContentClick" :false,
       "centerOnScroll" : false
-        
       });
+});
+
+$(document).on('click', '#f_close', function() {
+    $.fn.fancybox.close();
 });
